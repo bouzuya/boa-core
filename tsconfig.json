@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "es2015",
+    "target": "es2015",
+    "noImplicitAny": true,
+    "outDir": ".tmp/es2015/",
+    "rootDir": ".",
+    "sourceMap": false,
+    "moduleResolution": "node"
+  },
+  "files": [
+    "./src/index.ts",
+    "./test/index-test.ts",
+    "./typings/main.d.ts"
+  ]
+}
