@@ -31,7 +31,6 @@
   "keywords": [],
   "license": "MIT",
   "main": "./lib/index.js",
-  "typings": "./lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/bouzuya/b-o-a"
@@ -49,5 +48,6 @@
     "watch-es2015": "watch --ignoreUnreadable --wait 2 'npm run build-es2015' .tmp/es2015/src/",
     "watch-test": "mocha --watch --recursive --require intelli-espower-loader .tmp/es5/test/",
     "watch-ts": "tsc --watch"
-  }
+  },
+  "typings": "./lib/index.d.ts"
 }
