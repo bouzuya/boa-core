@@ -2,6 +2,12 @@
 
 A framework.
 
+## Installation
+
+```
+$ npm install b-o-a
+```
+
 ## License
 
 [MIT](LICENSE)
