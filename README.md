@@ -6,13 +6,14 @@ A simple framework.
 
 - uni-directional
 - single dispatcher
-- the action cycle
+- action cycle
 
 ## Types
 
 - `type O<T> = Observable<T>;`
 - `type A<T> = { type: string; data?: T; };`
-- `type App = (action$: O<A<any>>, options: any) => O<A<any>>;`
+- `type AppOptions = { re: (action: A<any>) => void; };`
+- `type App = (action$: O<A<any>>, options?: AppOptions) => O<A<any>>;`
 - `type run = (app: App) => void`;
 
 ## Installation
