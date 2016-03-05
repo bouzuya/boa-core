@@ -1,5 +1,6 @@
-import { A, O } from './o-a';
+import { A } from './a';
 import { App } from './app';
+import { O } from './o';
 import run from './run';
 
 export default run;

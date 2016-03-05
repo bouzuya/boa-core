@@ -1,4 +1,5 @@
-import { O, A } from './o-a';
+import { A } from './a';
+import { O } from './o';
 
 type App = (
   action$: O<A<any>>,

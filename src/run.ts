@@ -1,5 +1,5 @@
 import { Subject } from 'rxjs';
-import { A } from './o-a';
+import { A } from './a';
 import { App } from './app';
 
 export default function run(app: App): void {
