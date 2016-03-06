@@ -2,10 +2,7 @@
   "dependencies": {},
   "devDependencies": {},
   "ambientDevDependencies": {
-    "empower": "github:DefinitelyTyped/DefinitelyTyped/empower/empower.d.ts#aeb7701fbef3b7fc7261d67c025c823666ab98ea",
-    "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts#d6dd320291705694ba8e1a79497a908e9f5e6617",
-    "power-assert": "github:DefinitelyTyped/DefinitelyTyped/power-assert/power-assert.d.ts#8ab759a80cfd768be64d2215e935a73347bc68ea",
-    "power-assert-formatter": "github:DefinitelyTyped/DefinitelyTyped/power-assert-formatter/power-assert-formatter.d.ts#aeb7701fbef3b7fc7261d67c025c823666ab98ea"
+    "ava": "github:bouzuya/my-dts/ava/ava.d.ts#2165951f0bee3f5cbaaf3e05f60e19bb7bb5a7f4"
   },
   "ambientDependencies": {
     "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#1c56e368e17bb28ca57577250624ca5bd561aa81"
