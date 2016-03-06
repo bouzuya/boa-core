@@ -1,6 +1,6 @@
-# b-o-a
+# ![b-o-a](https://cloud.githubusercontent.com/assets/1221346/13554535/a97537aa-e3ed-11e5-8897-480f0c76c9c5.png)
 
-A simple framework.
+b-o-a is a simple framework.
 
 ## Concepts
 
@@ -28,7 +28,13 @@ $ npm install b-o-a
 
 ## License
 
-[MIT](LICENSE)
+### Source Code
+
+[MIT](LICENSE) ([@bouzuya][user])
+
+### Logo
+
+MIT ([@haskrock](https://github.com/hashrock))
 
 ## Author
 
