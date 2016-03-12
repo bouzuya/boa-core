@@ -1,7 +1,7 @@
 import { A } from './a';
 
-type AppOptions = {
+type HandlerOptions = {
   re: (action: A<any>) => void;
 };
 
-export { AppOptions };
+export { HandlerOptions };

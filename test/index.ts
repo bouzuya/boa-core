@@ -1,8 +1,11 @@
 import test from 'ava';
-import { A, App, AppOptions, O, run } from '../src/';
+import { A, Handler, HandlerOptions, O, run } from '../src/';
 
 test.beforeEach((t: any) => {
-  const app: App = (action$: O<A<any>>, { re }: AppOptions): O<A<any>> => {
+  const app: Handler = (
+    action$: O<A<any>>,
+    { re }: HandlerOptions
+  ): O<A<any>> => {
     t.context = { action$, re };
     return action$.filter(() => false);
   };
@@ -35,7 +38,7 @@ test.cb('`re` twice', (t: any) => {
 });
 
 test.cb('`re` filter null', (t: any) => {
-  let options: AppOptions = null;
+  let options: HandlerOptions = null;
   run((action$, opts) => {
     options = opts;
     action$.take(2).toArray().subscribe(([a1, a2]) => {

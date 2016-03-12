@@ -12,9 +12,9 @@ b-o-a is a simple framework.
 
 - `type O<T> = Observable<T>;`
 - `type A<T> = { type: string; data?: T; };`
-- `type AppOptions = { re: (action: A<any>) => void; };`
-- `type App = (action$: O<A<any>>, options?: AppOptions) => O<A<any>>;`
-- `type run = (app: App) => void`;
+- `type HandlerOptions = { re: (action: A<any>) => void; };`
+- `type Handler = (action$: O<A<any>>, options?: HandlerOptions) => O<A<any>>;`
+- `type run = (app: Handler) => void`;
 
 ## Installation
 
