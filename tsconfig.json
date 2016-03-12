@@ -4,6 +4,7 @@
     "module": "es2015",
     "target": "es2015",
     "noImplicitAny": true,
+    "noImplicitReturns": true,
     "outDir": ".tmp/es2015/",
     "rootDir": ".",
     "sourceMap": false,
