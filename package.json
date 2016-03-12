@@ -7,6 +7,14 @@
     "email": "m@bouzuya.net",
     "url": "http://bouzuya.net"
   },
+  "ava": {
+    "files": [
+      ".tmp/test"
+    ],
+    "source": [
+      "!**/*.js"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/bouzuya/b-o-a/issues"
   },
@@ -14,11 +22,11 @@
     "rxjs": "^5.0.0-beta.2"
   },
   "devDependencies": {
-    "ava": "^0.12.0",
-    "parallelshell": "^2.0.0",
-    "typescript": "^1.7.5",
-    "typings": "^0.6.3",
-    "watch": "^0.17.1"
+    "ava": "0.13.0",
+    "parallelshell": "2.0.0",
+    "typescript": "1.8.7",
+    "typings": "0.7.8",
+    "watch": "0.17.1"
   },
   "files": [
     "lib"
@@ -34,12 +42,14 @@
   "scripts": {
     "build": "tsc && npm run cp",
     "clean": "rm -rf lib/ .tmp/",
-    "cp": "cp -r .tmp/src/ lib/",
+    "cp": "cp -R .tmp/src/* lib/",
+    "md1": "[ -d .tmp/src ] || mkdir -p .tmp/src",
+    "md2": "[ -d lib ] || mkdir lib",
+    "prebuild": "parallelshell 'npm run md1' 'npm run md2'",
     "prepublish": "typings install && npm run clean && npm run build",
-    "test": "npm run build && ava .tmp/test/",
-    "watch": "npm run build && parallelshell 'tsc --watch' 'npm run watch-cp'",
-    "watch-cp": "watch --ignoreUnreadable --wait 2 'npm run cp' .tmp/src/",
-    "watch-test": "mocha --watch --recursive --require intelli-espower-loader .tmp/es5/test/"
+    "test": "ava",
+    "watch": "parallelshell 'tsc --watch' 'npm run watch-cp' 'ava -- watch",
+    "watch-cp": "watch --ignoreUnreadable --wait 2 'npm run cp' .tmp/src/"
   },
   "typings": "./lib/index.d.ts"
 }
