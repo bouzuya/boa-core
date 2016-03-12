@@ -4,7 +4,7 @@ import { O } from './o';
 
 type Handler = (
   action$: O<A<any>>,
-  options: HandlerOptions
+  options?: HandlerOptions
 ) => O<A<any>>;
 
 export { Handler };
