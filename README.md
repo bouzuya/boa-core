@@ -30,6 +30,14 @@ $ npm install b-o-a
 [bouzuya/boajs-handler-dom]: https://github.com/bouzuya/boajs-handler-dom
 [bouzuya/boajs-handler-history]: https://github.com/bouzuya/boajs-handler-history
 
+## Libraries
+
+- [bouzuya/boajs-vdom][]
+- [bouzuya/boajs-router][]
+
+[bouzuya/boajs-vdom]: https://github.com/bouzuya/boajs-vdom
+[bouzuya/boajs-router]: https://github.com/bouzuya/boajs-router
+
 ## Badges
 
 [![Circle CI][circleci-badge-url]][circleci-url]
