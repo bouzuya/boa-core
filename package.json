@@ -1,6 +1,6 @@
 {
-  "name": "b-o-a",
-  "description": "A simple framework",
+  "name": "boajs-core",
+  "description": "The core library for b-o-a",
   "version": "0.4.0",
   "author": {
     "name": "bouzuya",
@@ -16,7 +16,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/bouzuya/b-o-a/issues"
+    "url": "https://github.com/bouzuya/boajs-core/issues"
   },
   "dependencies": {
     "rxjs": "^5.0.0-beta.2"
@@ -31,13 +31,13 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/bouzuya/b-o-a#readme",
+  "homepage": "https://github.com/bouzuya/boajs-core#readme",
   "keywords": [],
   "license": "MIT",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bouzuya/b-o-a"
+    "url": "https://github.com/bouzuya/boajs-core"
   },
   "scripts": {
     "build": "tsc && npm run cp",
