@@ -1,5 +1,5 @@
 {
-  "name": "boajs-core",
+  "name": "boa-core",
   "description": "The core library for b-o-a",
   "version": "0.5.0",
   "author": {
@@ -16,7 +16,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/bouzuya/boajs-core/issues"
+    "url": "https://github.com/bouzuya/boa-core/issues"
   },
   "dependencies": {
     "rxjs": "^5.0.0-beta.2"
@@ -31,13 +31,13 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/bouzuya/boajs-core#readme",
+  "homepage": "https://github.com/bouzuya/boa-core#readme",
   "keywords": [],
   "license": "MIT",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bouzuya/boajs-core"
+    "url": "https://github.com/bouzuya/boa-core"
   },
   "scripts": {
     "build": "tsc && npm run cp",
