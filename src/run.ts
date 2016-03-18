@@ -6,7 +6,7 @@ export default function run(app: Handler): void {
   const subject = new Subject<A<any>>();
   const action$ = subject
     .asObservable()
-    .filter(action => action && action.type !== 'noop')
+    .filter(action => !!action)
     .share();
   const re = (action: A<any>) => setTimeout(() => subject.next(action));
   app(action$, { re }).subscribe(re);
