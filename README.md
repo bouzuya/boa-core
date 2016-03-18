@@ -1,6 +1,6 @@
-# ![b-o-a](https://cloud.githubusercontent.com/assets/1221346/13554535/a97537aa-e3ed-11e5-8897-480f0c76c9c5.png)
+# boajs-core
 
-b-o-a is a simple framework.
+The core library for b-o-a.
 
 ## Concepts
 
@@ -19,24 +19,8 @@ b-o-a is a simple framework.
 ## Installation
 
 ```
-$ npm install b-o-a
+$ npm install boajs-core
 ```
-
-## Handlers
-
-- [bouzuya/boajs-handler-dom][]
-- [bouzuya/boajs-handler-history][]
-
-[bouzuya/boajs-handler-dom]: https://github.com/bouzuya/boajs-handler-dom
-[bouzuya/boajs-handler-history]: https://github.com/bouzuya/boajs-handler-history
-
-## Libraries
-
-- [bouzuya/boajs-vdom][]
-- [bouzuya/boajs-router][]
-
-[bouzuya/boajs-vdom]: https://github.com/bouzuya/boajs-vdom
-[bouzuya/boajs-router]: https://github.com/bouzuya/boajs-router
 
 ## Badges
 
@@ -59,5 +43,5 @@ MIT ([@haskrock](https://github.com/hashrock))
 [user]: https://github.com/bouzuya
 [email]: mailto:m@bouzuya.net
 [url]: http://bouzuya.net
-[circleci-badge-url]: https://circleci.com/gh/bouzuya/b-o-a.svg?style=svg
-[circleci-url]: https://circleci.com/gh/bouzuya/b-o-a
+[circleci-badge-url]: https://circleci.com/gh/bouzuya/boajs-core.svg?style=svg
+[circleci-url]: https://circleci.com/gh/bouzuya/boajs-core
