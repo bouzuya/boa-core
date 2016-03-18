@@ -1,6 +1,8 @@
-# boajs-core
+# boa-core
 
-The core library for b-o-a.
+The core library for [bouzuya/b-o-a][].
+
+[bouzuya/b-o-a]: https://github.com/bouzuya/b-o-a
 
 ## Concepts
 
@@ -19,7 +21,7 @@ The core library for b-o-a.
 ## Installation
 
 ```
-$ npm install boajs-core
+$ npm install boa-core
 ```
 
 ## Badges
@@ -43,5 +45,5 @@ MIT ([@haskrock](https://github.com/hashrock))
 [user]: https://github.com/bouzuya
 [email]: mailto:m@bouzuya.net
 [url]: http://bouzuya.net
-[circleci-badge-url]: https://circleci.com/gh/bouzuya/boajs-core.svg?style=svg
-[circleci-url]: https://circleci.com/gh/bouzuya/boajs-core
+[circleci-badge-url]: https://circleci.com/gh/bouzuya/boa-core.svg?style=svg
+[circleci-url]: https://circleci.com/gh/bouzuya/boa-core
