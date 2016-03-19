@@ -1,6 +1,6 @@
 # boa-core
 
-The core library for [bouzuya/b-o-a][].
+The core library for [b-o-a][bouzuya/b-o-a].
 
 [bouzuya/b-o-a]: https://github.com/bouzuya/b-o-a
 
