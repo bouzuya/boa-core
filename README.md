@@ -30,13 +30,7 @@ $ npm install boa-core
 
 ## License
 
-### Source Code
-
-[MIT](LICENSE) ([@bouzuya][user])
-
-### Logo
-
-MIT ([@haskrock](https://github.com/hashrock))
+[MIT](LICENSE)
 
 ## Author
 
