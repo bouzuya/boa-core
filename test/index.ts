@@ -1,5 +1,11 @@
 import test from 'ava';
 import { A, Handler, HandlerOptions, O, run } from '../src/';
+import 'rxjs/add/observable/merge';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/filter';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/take';
+import 'rxjs/add/operator/toArray';
 
 test.beforeEach((t: any) => {
   const app: Handler = (
