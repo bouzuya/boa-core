@@ -19,7 +19,7 @@
     "url": "https://github.com/bouzuya/boa-core/issues"
   },
   "devDependencies": {
-    "ava": "0.13.0",
+    "ava": "0.14.0",
     "parallelshell": "2.0.0",
     "typescript": "1.8.7",
     "typings": "0.7.8",
