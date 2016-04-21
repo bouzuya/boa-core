@@ -22,8 +22,8 @@ test.cb('`re` once', (t: any) => {
   const action$: O<A<any>> = t.context.action$;
   const re: (action: A<any>) => void = t.context.re;
   action$.subscribe(action => {
-    t.ok(action.type === 'dummy');
-    t.ok(action.data === 123);
+    t.truthy(action.type === 'dummy');
+    t.truthy(action.data === 123);
     t.end();
   });
   re({ type: 'dummy', data: 123 });
@@ -33,10 +33,10 @@ test.cb('`re` twice', (t: any) => {
   const action$: O<A<any>> = t.context.action$;
   const re: (action: A<any>) => void = t.context.re;
   action$.take(2).toArray().subscribe(([a1, a2]) => {
-    t.ok(a1.type === 'dummy1');
-    t.ok(a1.data === 123);
-    t.ok(a2.type === 'dummy2');
-    t.ok(a2.data === 456);
+    t.truthy(a1.type === 'dummy1');
+    t.truthy(a1.data === 123);
+    t.truthy(a2.type === 'dummy2');
+    t.truthy(a2.data === 456);
     t.end();
   });
   re({ type: 'dummy1', data: 123 });
@@ -48,10 +48,10 @@ test.cb('`re` filter null', (t: any) => {
   run((action$, opts) => {
     options = opts;
     action$.take(2).toArray().subscribe(([a1, a2]) => {
-      t.ok(a1.type === 'dummy5');
-      t.ok(a1.data === 123);
-      t.ok(a2.type === 'dummy6');
-      t.ok(a2.data === 456);
+      t.truthy(a1.type === 'dummy5');
+      t.truthy(a1.data === 123);
+      t.truthy(a2.type === 'dummy6');
+      t.truthy(a2.data === 456);
       t.end();
     });
     return action$.map(() => null);
@@ -72,10 +72,10 @@ test.cb('auto re-action', (t: any) => {
       .take(2)
       .toArray()
       .subscribe(([a1, a2]) => {
-        t.ok(a1.type === 'dummy3');
-        t.ok(a1.data === 123);
-        t.ok(a2.type === 'dummy4');
-        t.ok(a2.data === 456);
+        t.truthy(a1.type === 'dummy3');
+        t.truthy(a1.data === 123);
+        t.truthy(a2.type === 'dummy4');
+        t.truthy(a2.data === 456);
         t.end();
       });
     return O.merge(dummy3$, dummy4$);
